@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="chat-container">
+    <div class="container">
         <h1>Real-Time Character Counter</h1>
-        <!-- <div class="textarea"> -->
-        <textarea class="chat" id="chat"></textarea>
-        <!-- </div> -->
-        <div class="extras">
-            <p>Total Characters: 20</p>
-            <p>Remaining: 10</p>
+        <textarea class="textarea" id="textarea" placeholder="Please write your text here..." maxlength="150"></textarea>
+        <div class="counter-container">
+            <p>Total Characters:
+                <span class="total-counter" id="total-counter"></span>
+            </p>
+            <p>Remaining:
+                <span class="remaining-counter" id="remaining-counter"></span>
+                </p>
         </div>
     </div>
     <script src="script.js"></script>
